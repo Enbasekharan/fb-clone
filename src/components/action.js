@@ -1,0 +1,12 @@
+export const SET_LOADING = "SET_LOADING";
+export const SET_STORIES = "SET_STORIES";
+export const HANDLE_PAGE = "HANDLE_PAGE";
+export const HANDLE_SEARCH = "HANDLE_SEARCH";
+export const HANDLE_PAGE_INDEX = "HANDLE_PAGE_INDEX";
+export const SET_SORT_BY_DATE = "SET_SORT_BY_DATE";
+export const USER_LOGIN = "USER_LOGIN";
+export const UPDATE_SORT = "UPDATE_SORT";
+export const SORT_PRODUCTS = "SORT_PRODUCTS";
+export const UPDATE_FILTER = "UPDATE_FILTER";
+export const FILTER_PRODUCTS = "FILTER_PRODUCTS";
+export const UPDATE_SEARCH = "UPDATE_SEARCH";

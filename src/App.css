@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.body {
+  margin: 10px auto;
+  max-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input__container {
   display: flex;
+  margin: 30px 0;
   flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  /* background-color: #b9a2a2; */
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+  max-width: 800px;
+}
+
+.input__top {
+  display: flex;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.input__top > h3 {
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input__bottom {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 0.25fr 2fr 1fr 1fr;
+  gap: 10px;
+}
+
+.input__bottom > input {
+  margin: 10px;
+  border-radius: 50px;
+  color: black;
+  background: rgb(221, 220, 220);
+}
+
+.input__bottom > button {
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.post {
+  padding: 20px 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.post__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.header > p {
+  color: gray;
+  font-size: small;
+}
+
+.btn__container {
+  display: flex;
+}
+
+.btn__container > button {
+  margin-left: 20px;
+}
+
+.like {
+  display: flex;
+}
+.like > button {
+  width: 30px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+  background-color: rgb(255, 255, 255);
+  /* background-color: #b9a2a2; */
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+  max-width: 800px;
+}
+
+.user {
+  display: flex;
+}
+
+.user > span {
+  margin-right: 20px;
 }
