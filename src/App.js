@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Login from "./components/login/Login";
-import Hero from "./components/home/Hero";
+// import Hero from "./components/home/Hero";
+import HeroDrawer from "./components/home/HeroDrawer";
 import "./App.css";
 import "./components/login/login.css";
 import { auth } from "./firebase";
@@ -87,7 +88,7 @@ function App() {
     <div className="App">
       {user ? (
         updateProfile ? (
-          <Hero handleLogOut={handleLogOut} />
+          <HeroDrawer handleLogOut={handleLogOut} />
         ) : (
           <ProfileUpdate
             setUpdateProfile={setUpdateProfile}

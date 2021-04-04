@@ -35,7 +35,7 @@ function InputField({ editItem, input, setInput, imageurl, setImageurl }) {
           <Input
             className="input__message"
             type="text"
-            placeholder={`What's on your mind?`}
+            placeholder={`What's on your mind ${userName} ?`}
             variant="filled"
             bg="white"
             color="black"

@@ -3,6 +3,10 @@
   max-width: 800px;
 }
 
+.header__left > img {
+  width: 40px;
+}
+
 .input__container {
   display: flex;
   margin: 30px 0;
@@ -37,8 +41,8 @@
 .input__bottom > input {
   margin: 10px;
   border-radius: 50px;
-  color: black;
-  background: rgb(221, 220, 220);
+  color: #c2966e;
+  background: #e4e6e9;
 }
 
 .input__bottom > button {
@@ -53,6 +57,7 @@
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
+  box-shadow: 2px 5px 7px -7px rgba(0, 0, 0, 0.75);
 }
 
 .post__top {
@@ -82,14 +87,13 @@
 
 .sidebar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 30px 0;
   background-color: rgb(255, 255, 255);
   /* background-color: #b9a2a2; */
   border-radius: 15px;
   padding: 20px 30px;
-  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
   max-width: 800px;
 }
 
@@ -99,4 +103,9 @@
 
 .user > span {
   margin-right: 20px;
+}
+
+.input__field {
+  display: flex;
+  flex-direction: column;
 }

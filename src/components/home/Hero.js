@@ -4,6 +4,7 @@ import Post from "./Post";
 import Sidebar from "./Sidebar";
 import { useGlobalContext } from "../context";
 import { dataBase } from "../../firebase";
+import NavBar from "./NavBar";
 
 function Hero({ handleLogOut }) {
   const [input, setInput] = useState("");
@@ -27,13 +28,14 @@ function Hero({ handleLogOut }) {
   };
   return (
     <section className="hero">
-      <nav>
+      <NavBar />
+      {/* <nav>
         <h2>
           welcome{"    "}
           {userName}
         </h2>
         <button onClick={handleLogOut}>Log Out</button>
-      </nav>
+      </nav> */}
 
       <section className="body">
         <Input

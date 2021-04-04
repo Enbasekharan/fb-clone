@@ -4,24 +4,24 @@ import {
   Select,
   FormLabel,
   RadioGroup,
-  Stack,
+  VStack,
   Radio,
 } from "@chakra-ui/react";
 import { useGlobalContext } from "../context";
 
 function Sidebar() {
   const {
-    search,
+    // search,
     sort,
     updateSort,
     filter,
     updateFilter,
-    updateSearch,
+    // updateSearch,
   } = useGlobalContext();
 
   return (
     <div className="sidebar">
-      <div className="input__field">
+      {/* <div className="input__field">
         <FormLabel marginTop="10px">Search</FormLabel>
         <Input
           type="text"
@@ -30,7 +30,7 @@ function Sidebar() {
           onChange={updateSearch}
           placeholder="User name / Post"
         />
-      </div>
+      </div> */}
       <div className="input__field">
         <FormLabel marginTop="10px">Sort by</FormLabel>
         <Select value={sort} onChange={updateSort}>
@@ -43,7 +43,7 @@ function Sidebar() {
       <div className="input__field">
         <FormLabel marginTop="10px">Filters</FormLabel>
         <RadioGroup defaultValue={filter} onChange={(e) => updateFilter(e)}>
-          <Stack spacing={2} direction="row">
+          <VStack spacing={2} direction="row">
             <Radio colorScheme="green" value="all" name="filter">
               All
             </Radio>
@@ -53,7 +53,7 @@ function Sidebar() {
             <Radio colorScheme="green" value="text" name="filter">
               Text Only
             </Radio>
-          </Stack>
+          </VStack>
         </RadioGroup>
       </div>
     </div>
