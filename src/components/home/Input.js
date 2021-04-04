@@ -55,6 +55,7 @@ function InputField({ editItem, input, setInput, imageurl, setImageurl }) {
             onClick={(e) => handleSubmit(e)}
             padding="10px"
             display="block"
+            color="gray.500"
           >
             Post
           </Button>

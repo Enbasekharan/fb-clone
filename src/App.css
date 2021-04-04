@@ -9,12 +9,12 @@
 
 .input__container {
   display: flex;
-  margin: 30px 0;
+  margin: 20px 0;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   /* background-color: #b9a2a2; */
   border-radius: 15px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
   max-width: 800px;
 }
@@ -34,19 +34,23 @@
 .input__bottom {
   flex: 1;
   display: grid;
-  grid-template-columns: 0.25fr 2fr 1fr 1fr;
+  grid-template-columns: 0.25fr 2fr 1fr 0.5fr;
   gap: 10px;
 }
 
+.input__bottom > span {
+  margin: 5px 10px 5px 0;
+}
+
 .input__bottom > input {
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 50px;
   color: #c2966e;
   background: #e4e6e9;
 }
 
 .input__bottom > button {
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 50px;
 }
 

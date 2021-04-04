@@ -4,7 +4,6 @@ import Post from "./Post";
 import Sidebar from "./Sidebar";
 import { useGlobalContext } from "../context";
 import { dataBase } from "../../firebase";
-import { FaBars } from "react-icons/fa";
 import {
   Button,
   Drawer,

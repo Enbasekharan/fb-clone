@@ -90,3 +90,30 @@
 .header__right {
   display: flex;
 }
+
+@media screen and (max-width: 1000px) {
+  .header__center {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__center {
+    display: none;
+  }
+  .header__right > .hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header__center {
+    display: none;
+  }
+  .header__right > .hide {
+    display: none;
+  }
+  .header__input {
+    width: 150px;
+  }
+}

@@ -9,10 +9,8 @@ import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import AddIcon from "@material-ui/icons/Add";
 import ForumIcon from "@material-ui/icons/Forum";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@chakra-ui/avatar";
 import { IconButton } from "@material-ui/core";
-import { Button } from "@chakra-ui/button";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../context";
 
@@ -54,20 +52,25 @@ export default function NavBar({ onOpen, btnRef }) {
         </div>
       </div>
       <div className="header__right">
-        <div className="header__info">
+        <div className="header__info hide">
           <Avatar src={userImage} name={userName} />
           <h4>{userName}</h4>
         </div>
-        <IconButton>
+        <IconButton className="hide">
           <AddIcon />
         </IconButton>
-        <IconButton>
+        <IconButton className="hide">
           <ForumIcon />
         </IconButton>
-        <IconButton>
+        <IconButton className="hide">
           <NotificationsActiveIcon />
         </IconButton>
-        <IconButton ref={btnRef} background="transparent" onClick={onOpen}>
+        <IconButton
+          className="side"
+          ref={btnRef}
+          background="transparent"
+          onClick={onOpen}
+        >
           <FaBars color="gray" />
         </IconButton>
       </div>
